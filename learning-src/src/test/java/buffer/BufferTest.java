@@ -23,7 +23,7 @@ public class BufferTest {
             byte b = buffer.readByte();
             System.out.println(b);
         }
-
+        System.out.println("-------------------");
         //ByteOrder.LITTLE_ENDIAN
         buffer = ChannelBuffers.buffer(ByteOrder.LITTLE_ENDIAN, 4);
         buffer.writeInt(value);
@@ -31,7 +31,7 @@ public class BufferTest {
             byte b = buffer.readByte();
             System.out.println(b);
         }
-
+        System.out.println("-------------------");
         //ByteOrder.nativeOrder()
         buffer = ChannelBuffers.buffer(ByteOrder.nativeOrder(), 4);
         buffer.writeInt(value);
